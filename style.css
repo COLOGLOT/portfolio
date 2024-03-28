@@ -1,0 +1,649 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: rgb(29, 27, 27);
+}
+.block{
+    position: relative;
+    display: grid;
+    margin: 0 auto;
+    width: 1800px;
+    height: 800px;
+}
+header{
+    max-width: 1800px;
+    max-height: 70px;
+}
+.logo{
+    position: absolute;
+    left: 40px;
+    top: 20px;
+}
+.logo b{
+    font-size: 25px;
+}
+.ul ul{
+    display: flex;
+    justify-content: right;
+    padding: 22px 100px;
+    text-decoration: none;
+}
+.ul li{
+    display: block;
+    padding: 0px 20px;
+}
+.ul a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.blue{
+    color:brown;
+}
+.content{
+    position: absolute;
+    left: 150px;
+    top: 400px;
+}
+.content b{
+    display: flex;
+}
+.text_one, .text_three{
+    font-size: 40px;
+}
+.text_two{
+    font-size: 50px;
+}
+.photo{
+    display: flex;
+    justify-content: right;
+    margin-right: 200px;
+    margin-top: 130px;
+}
+img{
+    animation: obv 6s linear infinite;
+    border-radius: 50%;
+    border: none;
+    width: 550px;
+    height: 550px;
+}
+.text_three::after{
+    content: "";
+    position: relative;
+    left: 10px;
+    color: brown;
+    animation: text 10s linear infinite;
+    filter: drop-shadow(0px 0px 5px brown);
+}
+a:hover{
+    transition: 0.5s;
+    color: brown;
+    filter: drop-shadow(0px 0px 5px brown);
+}
+.ul a:hover::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 2s;
+}
+#btn, .menu{
+    display: none;
+}
+#button_content a, #button_content li{
+    display: none;
+}
+@keyframes text {
+    0%{
+        content: "F|";
+    }
+    2.5%{
+        content: "Fr|";
+    }
+    5%{
+        content: "Fro|";
+    }
+    7.5%{
+        content: "Fron|";
+    }
+    10%{
+        content: "Front|";
+    }
+    12.5%{
+        content: "Front-|";
+    }
+    15%{
+        content: "Front-e|";
+    }
+    17.5%{
+        content: "Front-en|";
+    }
+    20%{
+        content: "Front-end|";
+    }
+    22.5%{
+        content: "Front-end |";
+    }
+    25%{
+        content: "Front-end Р|";
+    }
+    27.5%{
+        content: "Front-end Ра|";
+    }
+    30%{
+        content: "Front-end Раз|";
+    }
+    32.5%{
+        content: "Front-end Разр|";
+    }
+    35%{
+        content: "Front-end Разра|";
+    }
+    37.5%{
+        content: "Front-end Разраб|";
+    }
+    40%{
+        content: "Front-end Разрабо|";
+    }
+    42.5%{
+        content: "Front-end Разработ|";
+    }
+    45%{
+        content: "Front-end Разработч|";
+    }
+    47.5%{
+        content: "Front-end Разработчи|";
+    }
+    50%{
+        content: "Front-end Разработчик|";
+    }
+    52.5%{
+        content: "Front-end Разработчи|";
+    }
+    55%{
+        content: "Front-end Разработч|";
+    }
+    57.5%{
+        content: "Front-end Разработ|";
+    }
+    60%{
+        content: "Front-end Разрабо|";
+    }
+    62.5%{
+        content: "Front-end Разраб|";
+    }
+    65%{
+        content: "Front-end Разра|";
+    }
+    67.5%{
+        content: "Front-end Разр|";
+    }
+    70%{
+        content: "Front-end Раз|";
+    }
+    72.5%{
+        content: "Front-end Ра|";
+    }
+    75%{
+        content: "Front-end Р|";
+    }
+    77.5%{
+        content: "Front-end |";
+    }
+    80%{
+        content: "Front-end|";
+    }
+    82.5%{
+        content: "Front-en|";
+    }
+    85%{
+        content: "Front-e|";
+    }
+    87.5%{
+        content: "Front-|";
+    }
+    90%{
+        content: "Front|";
+    }
+    92.5%{
+        content: "Fron|";
+    }
+    95%{
+        content: "Fro|";
+    }
+    97.5%{
+        content: "Fr|";
+    }
+    100%{
+        content: "F|";
+    }
+}
+@keyframes obv {
+    0%{
+        box-shadow: 0px 0px 10px 15px brown;
+    }
+    50%{
+        box-shadow: none;
+    }
+    100%{
+        box-shadow: 0px 0px 10px 15px brown;
+    }
+}
+@media (max-width:1800px){
+    header{
+        width: 1700px;
+        max-height: 70px;
+    }
+    .photo{
+        margin-right: 230px;
+        margin-top: 130px;
+    }
+    .block{
+        width: 1730px;
+        height: 800px;
+    }
+}
+@media (max-width:1700px){
+    header{
+        width: 1580px;
+        max-height: 70px;
+    }
+    .block{
+        width: 1580px;
+        height: 800px;
+    }
+}
+@media (max-width:1600px) {
+    header{
+        width: 1500px;
+        max-height: 70px;
+    }
+    .block{
+        width: 1500px;
+        height: 700px;
+    }
+    .content{
+        position: absolute;
+        left: 150px;
+        top: 300px;
+    }
+    .photo{
+        margin-right: 150px;
+        margin-top: 90px;
+    }
+    img{
+        width: 500px;
+        height: 500px;
+
+    }    
+}
+@media (max-width:1500px) {
+    .content{
+        position: absolute;
+        left: 150px;
+        top: 250px;
+    }
+    .ul ul{
+        padding-right: 80px;
+    }
+    .photo{
+        margin-right: 100px;
+        margin-top: 60px;
+    }
+    header{
+        width: 1250px;
+        max-height: 70px;
+    }
+    .block{
+        width: 1250px;
+        height: 600px;
+    }
+    img{
+        width: 400px;
+        height: 400px;
+    }    
+    .text_one, .text_three{
+        font-size: 30px;
+    }
+    .text_two{
+        font-size: 40px;
+    }
+    .logo b{
+        font-size: 20px;
+    }
+    .ul a{
+        font-size: 15px;
+    }
+    .content p{
+        font-size: 13px;
+    }
+}
+@media (max-width:1200px) {
+    .content{
+        position: absolute;
+        left: 50px;
+        top: 200px;
+    } 
+    header{
+        width: 1050px;
+        max-height: 70px;
+    }
+    .block{
+        width: 1050px;
+        height: 550px;
+    } 
+    .ul ul{
+        padding-right: 50px;
+    }
+    .text_one, .text_three{
+        font-size: 25px;
+    }
+    .text_two{
+        font-size: 35px;
+    }
+    .photo{
+        margin-right: 80px;
+        margin-top: 0px;
+    }
+    img{
+        width: 350px;
+        height: 350px;
+    } 
+    .content p{
+        font-size: 10px;
+    }  
+}
+@media (max-width:1025px) {
+    header{
+        width: 930px;
+        max-height: 70px;
+    }
+    .block{
+        width: 930px;
+        height: 500px;
+    } 
+    .ul ul{
+        padding-right: 48px;
+    }
+    img{
+        width: 400px;
+        height: 400px;
+    }    
+    .text_one, .text_three{
+        font-size: 25px;
+    }
+    .text_two{
+        font-size: 35px;
+    }
+    .photo{
+        margin-right: 90px;
+        margin-bottom: 15px;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+    }   
+    .logo b{
+        font-size: 15px;
+    }
+    .ul a{
+        font-size: 13px;
+    }
+    .content p{
+        font-size: 10px;
+    }
+}
+@media (max-width:900px) {
+    header{
+        width: 820px;
+        max-height: 70px;
+    }
+    .block{
+        width: 820px;
+        height: 500px;
+    } 
+}
+@media (max-width:800px) {
+    header{
+        width: 700px;
+    }
+    .block{
+        width: 700px;
+        height: 400px;
+    } 
+    .content{
+        position: absolute;
+        left: 50px;
+        top: 140px;
+    }
+    img{
+        width: 400px;
+        height: 400px;
+    }    
+    .text_one, .text_three{
+        font-size: 15px;
+    }
+    .text_two{
+        font-size: 20px;
+    }
+    .photo{
+        margin-right: 60px;
+        margin-top: 60px;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }   
+    .logo b{
+        position: relative;
+        bottom: 10px;
+        font-size: 13px;
+    }
+    .ul ul {
+        display: none;
+    }
+    #btn{
+        z-index: 2;
+        background: url('/img/menu.svg') no-repeat;
+        border: none;
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        display: block;
+        cursor: pointer;
+    }
+    .content p{
+        font-size: 8px;
+    }
+    #button_content{
+        padding-top: 100px;
+        position: absolute;
+        right: 0;
+        background-color: rgb(38, 41, 41);
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        z-index: 1;
+    }
+    #button_content a, #button_content li{
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+}
+@media (max-width: 700px) {
+    header{
+        width: 600px;
+    }
+    .block{
+        width: 600px;
+        height: 330px;
+    } 
+    img{
+        width: 180px;
+        height: 180px;
+    }
+    .logo b{
+        position: relative;
+        bottom: 12px;
+        font-size: 10px;
+    }
+    #btn{
+        width: 23px;
+        height: 23px;
+    }
+    .text_one, .text_three{
+        font-size: 12px;
+    }
+    .text_two{
+        font-size: 17px;
+    }
+    .content p{
+        font-size: 6px;
+    }
+    .photo{
+        margin-right: 60px;
+        margin-top: 50px;
+    }
+    #button_content a, #button_content li{
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+    #button_content{
+        padding-top: 80px;
+    }
+}
+@media (max-width: 600px) {
+    header{
+        width: 420px;
+    }
+    .block{
+        width: 420px;
+        height: 250px;
+    } 
+    img{
+        width: 130px;
+        height: 130px;
+    }
+    .logo b{
+        position: relative;
+        right: 10px;
+        bottom: 17px;
+        font-size: 8px;
+    }
+    #btn{
+        width: 19px;
+        height: 19px;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+    .text_one, .text_three{
+        font-size: 10px;
+    }
+    .text_two{
+        font-size: 15px;
+    }
+    .content p{
+        font-size: 5px;
+    }
+    .photo{
+        margin-right: 30px;
+        margin-top: 35px;
+    }
+    .content{
+        position: absolute;
+        left: 36px;
+        top: 100px;
+    }
+    #button_content a, #button_content li{
+        margin-bottom: 7px;
+        font-size: 11px;
+    }
+    #button_content{
+        padding-top: 60px;
+    }
+}
+@media (max-width: 400px) {
+    header{
+        width: 350px;
+    }
+    .block{
+        width: 350px;
+        height: 200px;
+    } 
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    .logo b{
+        position: relative;
+        right: 15px;
+        bottom: 21px;
+        font-size: 6px;
+    }
+    #btn{
+        width: 13px;
+        height: 13px;
+        position: absolute;
+        right: 12px;
+        top: 8px;
+    }
+    .text_one, .text_three{
+        font-size: 8px;
+    }
+    .text_two{
+        font-size: 13px;
+    }
+    .content p{
+        font-size: 4px;
+    }
+    .photo{
+        margin-right: 45px;
+        margin-top: 25px;
+    }
+    .content{
+        position: absolute;
+        left: 30px;
+        top: 80px;
+    }
+    #button_content a, #button_content li{
+        margin-bottom: 5px;
+        font-size: 8px;
+    }
+    #button_content{
+        padding-top: 50px;
+    }
+}
+@media (max-width: 300px) {
+    header{
+        width: 280px;
+    }
+    .block{
+        width: 280px;
+        height: 200px;
+    } 
+    .content{
+        position: absolute;
+        left: 10px;
+        top: 80px;
+    }
+    .text_one, .text_three{
+        font-size: 6px;
+    }
+    .text_two{
+        font-size: 11px;
+    }
+    .content p{
+        font-size: 3px;
+    }
+}
